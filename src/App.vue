@@ -25,6 +25,11 @@
         </div>
       </div>
     </div>
+    <div class="footer">
+      <span class="main">
+        Made with ❤️in the USA 🇺🇸by <a href="https://github.com/razod">Nexh</a>
+      </span>
+    </div>
   </div>
 </template>
 
