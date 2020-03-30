@@ -1,0 +1,12 @@
+h4 {
+    text-align: center;
+}
+
+.lt {
+    margin-left: 8px;
+}
+
+body {
+    background-color: #ececec;
+}
+html, body {margin: 0; height: 100%; overflow: hidden}

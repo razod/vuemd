@@ -1,28 +1,68 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="container">
+    <div class="row mt-4">
+      <div class="col text-center">
+        <h1>Markdown Editor</h1>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h4>Markdown</h4>
+        <textarea
+         class="info lt" 
+         v-model="markdown"
+         />
+      </div>
+      <div class="col-md-6">
+        <h4>Preview</h4>
+        <div readonly
+        :key="markdown"
+        class="info txt scroll rt"
+        v-markdown
+        >
+        {{markdown}}
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "app",
+  data() {
+    return {
+      markdown: "# Hello!\n### This is a mark down editor!\nYou can have inline code like `var foo = 'bar';`\n\nor an image of a bear\n\n![bears](http://placebear.com/200/200)",
+    };
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+* {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif !important;
 }
+textarea {
+  resize: none;
+  border: 1px black;
+  outline: none;
+}
+.info {
+  height: 350px;
+  width: 100%;
+  background-color: rgba(255, 255, 255);
+}
+.txt {
+  color: black;
+}
+    
+div.scroll {  
+    height: 350px;
+  width: 95%;
+                background-color: white; 
+                overflow-x: hidden; 
+                overflow-x: auto; 
+                text-align:justify; 
+            } 
 </style>
