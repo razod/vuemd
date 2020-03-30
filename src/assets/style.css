@@ -10,3 +10,21 @@ body {
     background-color: #ececec;
 }
 html, body {margin: 0; height: 100%; overflow: hidden}
+
+.footer {
+    background:transparent;
+    bottom:3%;
+    left:2%;
+    right:0;
+    position:absolute;
+    color:#8E91A2;
+  }
+  
+  .footer a {
+    color: #5C4DF0;
+    transition:0.2s;
+  }
+  
+  .footer a:hover {
+    color: #A14DF0;
+  }
