@@ -1,4 +1,5 @@
 # vuemd
+a markdown editor made with vue.
 
 ## Project setup
 ```
