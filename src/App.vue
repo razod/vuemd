@@ -27,7 +27,7 @@
     </div>
     <div class="footer">
       <span class="main">
-        Made with ❤️in the USA 🇺🇸by <a href="https://github.com/razod">Nexh</a>
+        Made with ❤️ in the USA 🇺🇸 by <a href="https://github.com/razod">Nexh</a>
       </span>
     </div>
   </div>
@@ -38,7 +38,7 @@ export default {
   name: "app",
   data() {
     return {
-      markdown: "# Hello!\n### This is a mark down editor!\nYou can have inline code like `var foo = 'bar';`\n\nor an image of a bear\n\n![bears](https://placebear.com/200/200)",
+      markdown: "# Hello!\n### This is a markdown editor!\nYou can have inline code like `var foo = 'bar';`\n\nor an image of a bear\n\n![bears](https://placebear.com/200/200)",
     };
   },
 };
