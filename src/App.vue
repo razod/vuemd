@@ -18,7 +18,7 @@
         <h4>Preview</h4>
         <div readonly
         :key="markdown"
-        class="info txt scroll rt"
+        class="info txt scroll rt resize"
         v-markdown
         >
         {{markdown}}
@@ -69,5 +69,6 @@ div.scroll {
                 overflow-x: hidden; 
                 overflow-x: auto; 
                 text-align:justify; 
+                resize: both;
             } 
 </style>
