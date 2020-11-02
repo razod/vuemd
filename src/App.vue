@@ -38,7 +38,7 @@ export default {
   name: "app",
   data() {
     return {
-      markdown: "# Hello!\n### This is a markdown editor!\nYou can have inline code like `var foo = 'bar';`\n\nor an image of a bear\n\n<img src="https://placebear.com/300/200" alt="bear" />"
+      markdown: "# Hello!\n### This is a markdown editor!\nYou can have inline code like `var foo = 'bar';`\n\nor an image of a bear\n\n<img src=\"https://placebear.com/300/200\" alt=\"bear\" />"
     };
   },
 };
